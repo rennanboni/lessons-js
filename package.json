@@ -1,0 +1,61 @@
+{
+  "name": "lessons-js",
+  "version": "1.0.0",
+  "description": "Javascript lessons",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "javascript",
+    "lesson"
+  ],
+  "author": "rennanboni@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "dotenv": "^16.0.3",
+    "jest": "^29.4.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "roots": [
+      "<rootDir>",
+      "<rootDir>/../test"
+    ],
+    "setupFiles": [
+      "dotenv/config",
+      "<rootDir>/../test/setup.environment.js"
+    ],
+    "testRegex": ".*\\.spec\\.js$",
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/../node_modules",
+      "<rootDir>/app.module.ts",
+      "<rootDir>/main.ts",
+      "<rootDir>/controllers/health.controller.ts",
+      "<rootDir>/domain",
+      "<rootDir>/entities",
+      "<rootDir>/dto"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80
+      }
+    }
+  }
+}
