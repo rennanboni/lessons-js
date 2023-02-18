@@ -5,6 +5,6 @@ module.exports = {
    * @returns true se maior que 18 anos, caso contrario false
    */
   checarMaiorIdade: function (idade) {
-    return false;
+    return undefined;
   }
 };
