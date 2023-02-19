@@ -57,5 +57,8 @@
         "lines": 80
       }
     }
+  },
+  "dependencies": {
+    "cpf": "^2.0.1"
   }
 }
