@@ -8,7 +8,13 @@ module.exports = {
    * @param {number} multiplicador 
    * @returns Retorna um array
    */
-  imprimirTabuada: function (numero, multiplicador) {
-    return undefined;
+  tabuada: function (numero, multiplicador) {
+    let tabuada = [];
+    for (let indice = 1; indice <= multiplicador; indice++) {
+      let linha = numero + " x " + indice + " = " + (numero * indice);
+      tabuada.push(linha)
+    }
+
+    return tabuada;
   }
 };

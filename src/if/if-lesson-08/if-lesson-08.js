@@ -14,7 +14,8 @@ module.exports = {
   criarMessagemDeBemVindas: function(usuario) {
     if(usuario.sexo == "M" ){
       return "Seja bem vindo "+ usuario.nome;
-    }else 
+    } else {
       return "Seja bem vinda " + usuario.nome;
+    }
   },
 };

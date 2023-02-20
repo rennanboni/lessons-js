@@ -15,6 +15,10 @@ module.exports = {
    * @returns Retorna messagem brinde de fidelidade caso satisfeito, caso contrario retorna undefined
    */
   brindeDeFidelidade: function(usuario) {
-    return undefined;
+    if (usuario.compras.length > 5) {
+      return "Olá " + usuario.nome + ", você já resgatou o seu brinde na nossa central?";
+    } else {
+      return undefined;
+    }
   },
 };

@@ -10,6 +10,7 @@ const USUARIO_01 = {
     { produto: { nome: 'Produto 03' } },
     { produto: { nome: 'Produto 04' } },
     { produto: { nome: 'Produto 05' } },
+    { produto: { nome: 'Produto 06' } },
   ]
 };
 
@@ -25,7 +26,7 @@ const USUARIO_02 = {
 describe('if-lesson-08', () => {
   it('checa brinde de bidelidade - 01', () => {
     const result = lesson.brindeDeFidelidade(USUARIO_01);
-    const expected = 'Olá Antonio Gordo da Silva, você ja resgatou o seu brinde na nossa central?';
+    const expected = 'Olá Antonio Gordo da Silva, você já resgatou o seu brinde na nossa central?';
     expect(result).toEqual(expected);
   });
 
