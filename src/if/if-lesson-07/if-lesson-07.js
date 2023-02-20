@@ -14,7 +14,7 @@ module.exports = {
    * @returns Retorna messagem de sucesso
    */
   criarMessagemDeSucesso: function(usuario) {
-    return undefined;
+    return SACAR_SUCESSO_INICIO + usuario.nome + SACAR_SUCESSO_FIM ;
   },
   /**
    * Cria una menssagem de erro
@@ -26,6 +26,6 @@ module.exports = {
    * @returns Retorna messagem de erro
    */
   criarMessagemDeErro: function(usuario) {
-    return undefined;
+    return SACAR_SUCESSO_INICIO + usuario.nome + SACAR_ERRO_FIM ;
   },
 };

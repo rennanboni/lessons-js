@@ -10,6 +10,6 @@ describe('if-lesson-01', () => {
   });
 
   it('deve ser menor de idade', () => {
-    expect(lesson.checarMaiorIdade(17)).toBeTruthy();
+    expect(lesson.checarMaiorIdade(17)).toBeFalsy();
   });
 });

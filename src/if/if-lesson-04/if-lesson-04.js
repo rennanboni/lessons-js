@@ -5,6 +5,6 @@ module.exports = {
    * @returns 
    */
   dobroNumero: function(numero) {
-    return undefined;
+    return numero * 2;
   }
 };

@@ -6,6 +6,8 @@ describe('if-lesson-03', () => {
   });
 
   it('some de dois numero', () => {
-    expect().toBeDefined();
+    const result = lesson.soma(3, 2);
+    const expected = 5;
+    expect(result).toBe(expected);
   });
 });

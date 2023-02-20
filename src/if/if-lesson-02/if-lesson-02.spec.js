@@ -8,6 +8,6 @@ describe('if-lesson-02', () => {
   it('soma 1', () => {
     const result = lesson.somaUm(1);
     const expected = 2;
-    expect(result).toBeDefined(expected);
+    expect(result).toBe(expected);
   });
 });

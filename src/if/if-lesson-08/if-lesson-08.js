@@ -12,6 +12,9 @@ module.exports = {
    * @returns Retorna messagem de boas vindas
    */
   criarMessagemDeBemVindas: function(usuario) {
-    return undefined;
+    if(usuario.sexo == "M" ){
+      return "Seja bem vindo "+ usuario.nome;
+    }else 
+      return "Seja bem vinda " + usuario.nome;
   },
 };

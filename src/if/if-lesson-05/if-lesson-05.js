@@ -6,6 +6,6 @@ module.exports = {
    * @returns 
    */
   sacarDinheiroBanco: function(saldo, quantidade) {
-    return undefined;
+    return saldo - quantidade;
   }
 };

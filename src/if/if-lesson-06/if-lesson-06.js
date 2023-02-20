@@ -7,12 +7,12 @@ module.exports = {
    * Cria una menssagem de sucesso
    * Exemplo:
    *   nome = 'Antonio Gordo da Silva'
-   *   resultado = 'Olá, Antonio Gordo da Silva seu dinheiro foi sacado com sucesso'
+   *   resultado = 'Olá Antonio Gordo da Silva, seu dinheiro foi sacado com sucesso'
    * @param {string} nome Nome do cliente
    * @returns Retorna messagem de sucesso
    */
   criarMessagemDeSucesso: function(nome) {
-    return undefined;
+    return INICIO_MESSAGEM + nome + SACAR_SUCESSO_FIM;
   },
   /**
    * Cria una menssagem de erro
@@ -23,6 +23,7 @@ module.exports = {
    * @returns Retorna messagem de erro
    */
   criarMessagemDeErro: function(nome) {
-    return undefined;
+    return INICIO_MESSAGEM + nome + SACAR_ERRO_FIM;
   },
 };
+ 
